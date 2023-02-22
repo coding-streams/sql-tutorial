@@ -74,17 +74,17 @@ To create a database in MySQL, you can use the following steps:
 2. Enter your MySQL user password when prompted.
 
 3. Once you're in the MySQL shell, type the following command to create a new database:
-```sql
-CREATE DATABASE database_name;
--- Replace `database_name` with the name you want to give your database.
-```
+    ```sql
+    CREATE DATABASE database_name;
+    -- Replace `database_name` with the name you want to give your database.
+    ```
 4. To check if your database was created successfully, you can type the following command:
-```sql
-SHOW DATABASES;
--- This will show you a list of all the databases in your MySQL server, including the one you just created.
-```
+    ```sql
+    SHOW DATABASES;
+    -- This will show you a list of all the databases in your MySQL server, including the one you just created.
+    ```
 5. You can also use the following command to switch to your new database:
-```sql
-USE database_name;
--- This will allow you to start working with the tables and data in your new database.
-```
+    ```sql
+    USE database_name;
+    -- This will allow you to start working with the tables and data in your new database.
+    ```
