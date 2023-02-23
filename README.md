@@ -1,3 +1,13 @@
+# SQL Tutorial for Beginners [Coding Streams]
+
+This repository contains a comprehensive SQL tutorial designed for beginners. Whether you're new to programming or just getting started with SQL, this tutorial will provide you with a strong foundation in the basics of SQL and relational database management.
+
+The tutorial covers essential SQL concepts, including database creation, table creation, data insertion and retrieval, filtering, sorting, grouping, and more. It also covers advanced SQL topics such as joins, subqueries, and functions.
+
+Each topic in the tutorial includes clear explanations, examples, and practice exercises to help you reinforce your understanding of the material. Additionally, the repository includes a collection of sample SQL queries that you can use as templates for your own projects.
+
+Whether you're looking to build a career in data science, web development, or any other field that involves working with databases, this SQL tutorial will provide you with the foundational knowledge and skills you need to succeed.
+
 # Database
 Databases are used to store and organize large amounts of data in a way that makes it easy to access, manage, and analyze. 
 Here are a few examples of why we need databases:
@@ -259,6 +269,33 @@ To filter data using the WHERE clause in MySQL, you can use the following steps:
     WHERE salary > 50000 AND age < 30;
     ```
 
+## Wildcard in WHERE caluse
+In SQL, a wildcard character is a special symbol used to represent one or more characters in a string. The two most commonly used wildcard characters are the percent symbol % and the underscore symbol _.
+
+The percent symbol % represents zero or more characters, while the underscore symbol _ represents a single character.
+
+When used in a WHERE clause, these wildcard characters can be used to search for patterns in a column value or string.
+
+For example, to select all rows from a table where the value in the name column starts with the letter 'J', you can use the % symbol as follows:
+```sql
+SELECT * FROM my_table WHERE name LIKE 'J%';
+-- This query will return all rows where the value in the name column starts with the letter 'J'.
+```
+
+Similarly, if you want to select all rows from a table where the value in the phone_number column ends with the digits '1234', you can use the % symbol as follows:
+
+```sql
+SELECT * FROM my_table WHERE pho
+-- This query will return all rows where the value in the phone_number column ends with the digits '1234'.ne_number LIKE '%1234';
+```
+
+The underscore symbol _ can be used to match a single character, so for example, to find all names in a table that have six letters and end with the letter 's', you could use:
+```sql
+SELECT name FROM my_table WHERE name LIKE '____s';
+-- This query will return all names in the name column of my_table that are exactly six characters long and end with the letter 's'.
+```
+
+
 # Sort Data Using ORDER BY
 To sort data in MySQL, you can use the ORDER BY clause in the SELECT statement. Here are the basic steps:
 
@@ -417,6 +454,8 @@ In MySQL, a join is used to combine rows from two or more tables based on a rela
 - **Right Join:** Returns all the rows from the right table and the matching rows from the left table. If there is no matching row in the left table, NULL values are returned.
 
 - **Full Outer Join:** Returns all the rows from both tables, including the unmatched rows.
+
+- **Self Join:** A self join is a join in which a table is joined with itself. This can be useful when working with hierarchical data, or when trying to compare rows within the same table.
 
 Here's an example of how to use an inner join in MySQL:
 
