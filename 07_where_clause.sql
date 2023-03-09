@@ -8,7 +8,7 @@ where employee_id = 5;
 -- 2. Write a query to retrieve the first and last names of all employees from the "employees" table who were hired in the year 2022.
 select * 
 from employees 
-where hire_date >= 2022-01-01;
+where YEAR(hire_date) = 2022;
 
 -- 3. Write a query to retrieve the first and last names of all employees from the "employees" table who have a salary greater than 50,000.
 select first_name, last_name 
